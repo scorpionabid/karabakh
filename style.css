@@ -6,15 +6,30 @@ body {
 }
 
 .hero-banner {
-    background-image: url("/karabakh/photos/hero1.jpg");
-    background-size: cover;
-    background-position: center;
+    position: relative;
     height: 80vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     color: #fff;
+    overflow: hidden; /* Şəkilin qovluqdan çıxmaması üçün */
 }
+
+.hero-banner .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Şəkilin tam uyğunlaşması üçün */
+    z-index: -1; /* Şəkilin mətnin arxasında qalması üçün */
+}
+
+.hero-banner .container {
+    position: relative;
+    z-index: 1; /* Mətnin şəkilin üstündə qalması üçün */
+}
+
 
 h1, h2, h3, h4, h5 {
     font-weight: bold;
