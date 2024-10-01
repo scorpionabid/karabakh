@@ -1,0 +1,152 @@
+/* Basic Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.hero-banner {
+    background-image: url("../photos/hero1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+.display-4 {
+    font-size: 3rem;
+    line-height: 1.2;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.lead {
+    font-size: 1.2rem;
+}
+
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about-us .row {
+    align-items: center;
+}
+
+.about-us img {
+    border-radius: 10px;
+}
+
+.faculties .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.faculties .card:hover {
+    transform: translateY(-5px);
+}
+
+.faculties .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.teaching img {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.student-life .row {
+    align-items: center;
+}
+
+.student-life img {
+    border-radius: 10px;
+}
+
+/* Contact Form */
+.contact form {
+    margin-bottom: 20px;
+}
+
+.contact form .form-control {
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.contact form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* Placeholder Images */
+.placeholder-logo {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #777;
+    font-size: 1.5rem;
+}
+
+.placeholder-hero {
+    background-color: #ccc;
+    padding: 100px 0;
+    border-radius: 10px;
+}
+
+.placeholder-about {
+    background-color: #eee;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.placeholder-faculty {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.placeholder-teaching {
+    background-color: #eee;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.placeholder-student {
+    background-color: #ccc;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.placeholder-contact {
+    background-color: #ddd;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+
+    .hero-banner .lead {
+        font-size: 1rem;
+    }
+}
+
